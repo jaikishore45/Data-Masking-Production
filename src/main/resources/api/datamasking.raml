@@ -1,0 +1,136 @@
+#%RAML 1.0
+title: DataMasking
+version: 1.0
+/encrypt:
+  get:
+    headers:
+      Authorization:
+        description: Bearer token for validation.
+        type: string
+        example: Zhki9ijsok2ESr8NJcTKEcCtwIWxnps81DNsg
+        required: true
+        minLength: 1
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                  "Code":200,
+                  "Msg":"Hello, AES Encryption is used for Masking"
+              }
+/pbeDecrypt:
+  post:
+    headers:
+     Authorization:
+        description: Bearer token for validation.
+        type: string
+        example: Zhki9ijsok2ESr8NJcTKEcCtwIWxnps81DNsg
+        required: true
+        minLength: 1
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                  "Code":200,
+                  "Msg":"Hello, AES Encryption is used for Masking"
+              }
+/jceDecrypt:
+  post:
+    headers:
+      Authorization:
+        description: Bearer token for validation.
+        type: string
+        example: Zhki9ijsok2ESr8NJcTKEcCtwIWxnps81DNsg
+        required: true
+        minLength: 1
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                  "Code":200,
+                  "Msg":"Hello, AES Encryption is used for Masking"
+              }
+/pgpEncrypt:
+  get:
+    headers:
+      Authorization:
+        description: Bearer token for validation.
+        type: string
+        example: Zhki9ijsok2ESr8NJcTKEcCtwIWxnps81DNsg
+        required: true
+        minLength: 1
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                  "MoVl+N1h0+mynrTJBdbw4ql+BZz6APoQmG6fvB8ji9o/A7ltrNgtyVVAXVfzo5R9c6dwwZhRC4jVAaPnZYHzn7otF03WU2+F8sg/6474LvM="
+              }
+
+/pgpDecrypt:
+  post:
+    headers:
+      Authorization:
+        description: Bearer token for validation.
+        type: string
+        example: Zhki9ijsok2ESr8NJcTKEcCtwIWxnps81DNsg
+        required: true
+        minLength: 1
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                  "Code":200,
+                  "Msg":"Hello, AES Encryption is used for Masking"
+              }
+/maskFunction:
+  post:
+    headers:
+     Authorization:
+        description: Bearer token for validation.
+        type: string
+        example: Zhki9ijsok2ESr8NJcTKEcCtwIWxnps81DNsg
+        required: true
+        minLength: 1
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                  "Code":200,
+                  "Msg":"Hello, AES Encryption is used for Masking"
+              }
+/maskObject:
+  post:
+    headers:
+      Authorization:
+        description: Bearer token for validation.
+        type: string
+        example: Zhki9ijsok2ESr8NJcTKEcCtwIWxnps81DNsg
+        required: true
+        minLength: 1
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                  "Code":200,
+                  "Msg":"Hello, AES Encryption is used for Masking"
+              }
+
+
+
+                                                      
+      
+
+
